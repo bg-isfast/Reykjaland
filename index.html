@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Reykjaland — Innviðamælaborð ÍB317</title>
+<style>
+:root{
+  --navy:#12263A; --navy2:#1D3A57; --navy3:#274B6E; --gold:#C9A227; --goldd:#A8871B;
+  --ice:#EAF1F8; --grey:#5A6B7A; --line:#D5DFE8; --green:#1F8A5D; --red:#B03A2E; --blue:#2E6FBA;
+  --cream:#F7F2E2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:var(--navy2);background:#fff;line-height:1.55}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;background:var(--navy);z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+nav .wrap{display:flex;gap:4px;align-items:center;overflow-x:auto;padding:0 12px}
+nav a{color:#8FA5B8;text-decoration:none;font-size:12.5px;padding:12px 10px;white-space:nowrap}
+nav a:hover{color:#fff}
+nav .brand{color:var(--gold);font-weight:700;letter-spacing:1px;font-size:13px;padding-right:14px}
+header.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:80px 0 60px}
+.hero h1{font-size:44px;letter-spacing:5px;font-weight:800}
+.hero .sub{color:var(--gold);font-size:21px;margin-top:14px}
+.hero .meta{color:#8FA5B8;font-size:14px;margin-top:10px}
+.hero .tag{margin-top:40px;color:#6E8298;font-style:italic;font-size:14px}
+section{padding:54px 0;border-bottom:1px solid var(--line)}
+section.dark{background:var(--navy);color:var(--ice);border-bottom:none}
+section.tint{background:#F4F8FB}
+h2{color:var(--navy);font-size:26px;margin-bottom:6px}
+section.dark h2{color:#fff}
+h3.subh{color:var(--navy);font-size:17px;margin:26px 0 10px}
+section.dark h3.subh{color:var(--gold)}
+.lede{color:var(--grey);font-style:italic;margin-bottom:24px;font-size:15px}
+section.dark .lede{color:#8FA5B8}
+p.body{font-size:14.5px;margin-bottom:12px;max-width:860px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.card{background:var(--ice);border-radius:12px;padding:18px 20px}
+.card h3{color:var(--navy);font-size:15.5px;margin-bottom:8px}
+.card p,.card li{font-size:13.5px}
+.card ul{margin:6px 0 0 18px}
+.card li{margin-bottom:6px}
+.dcard{background:var(--navy2);border-radius:12px;padding:18px 20px;color:var(--ice)}
+.dcard h3{color:var(--gold);font-size:15px;margin-bottom:8px}
+.dcard p,.dcard li{font-size:13.5px}
+.dcard ul{margin:6px 0 0 18px}
+.stat{background:var(--ice);border-radius:12px;padding:16px;text-align:center}
+.stat .n{font-size:30px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums}
+.stat .n.gold{color:var(--goldd)}
+.stat .n.good{color:var(--green)}
+.stat .n.bad{color:var(--red)}
+.stat .l{font-size:12px;color:var(--grey);margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th{background:var(--navy);color:#fff;text-align:left;padding:9px 12px;font-size:12.5px}
+td{border:1px solid var(--line);padding:9px 12px;vertical-align:top}
+tr.hl td{background:var(--cream);font-weight:600}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+.callout{background:var(--cream);border:1px solid var(--gold);border-radius:12px;padding:16px 20px;margin-top:22px;font-size:15px}
+.quote{background:var(--ice);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:14px 18px;margin:14px 0;font-size:14px;font-style:italic;color:var(--navy2)}
+.quote .who{display:block;font-style:normal;font-size:12px;color:var(--grey);margin-top:8px}
+figure.chart{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:16px}
+section.dark figure.chart{background:var(--navy2);border-color:var(--navy3)}
+figcaption{font-size:12px;color:var(--grey);margin-top:8px;text-align:center}
+section.dark figcaption{color:#8FA5B8}
+.note{font-size:12.5px;color:var(--grey);margin-top:14px}
+section.dark .note{color:#8FA5B8}
+.timeline{margin-top:14px}
+.trow{display:flex;gap:14px;margin-bottom:13px}
+.tyr{min-width:110px;font-weight:800;color:var(--goldd);font-size:13.5px}
+.trow .tx{font-size:13.5px}
+.flowrow{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch;margin-top:14px}
+.flow{flex:1;min-width:190px;background:var(--ice);border-radius:12px;padding:14px 16px}
+.flow.gold{background:var(--gold);color:var(--navy)}
+.flow b{display:block;margin-bottom:6px;font-size:13.5px}
+.flow span{font-size:12.5px}
+.arrow{align-self:center;color:var(--gold);font-size:22px;font-weight:700}
+/* model */
+#model .panel{display:grid;grid-template-columns:minmax(300px,370px) 1fr;gap:26px}
+@media(max-width:840px){#model .panel{grid-template-columns:1fr}}
+.sliders{background:var(--navy2);border-radius:14px;padding:20px}
+.sliders h3{color:var(--gold);font-size:15px;margin:16px 0 6px}
+.sliders h3:first-child{margin-top:0}
+.sl{margin-bottom:10px}
+.sl label{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ice)}
+.sl label output{color:var(--gold);font-weight:700;font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;accent-color:var(--gold);height:22px}
+.sl select{width:100%;padding:7px 8px;border-radius:8px;border:1px solid var(--navy3);background:var(--navy);color:var(--ice);font-size:12.5px;margin-top:4px}
+.presets{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.presets button{flex:1;min-width:90px;padding:8px 6px;border-radius:8px;border:1px solid var(--navy3);
+  background:var(--navy);color:var(--ice);font-size:12.5px;cursor:pointer;font-weight:600}
+.presets button.on{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.kpi{background:var(--ice);border-radius:12px;padding:12px;text-align:center}
+.kpi .n{font-size:23px;font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums}
+.kpi .n.good{color:var(--green)} .kpi .n.bad{color:var(--red)}
+.kpi .l{font-size:11px;color:var(--grey);margin-top:2px}
+.reset{margin-top:12px;background:none;border:1px solid var(--gold);color:var(--gold);border-radius:8px;padding:7px 14px;font-size:12.5px;cursor:pointer}
+.reset:hover{background:var(--gold);color:var(--navy)}
+footer{background:var(--navy);color:#6E8298;font-size:12px;padding:26px 0;text-align:center}
+footer b{color:#8FA5B8}
+.lockrow{margin-top:10px}
+.lockrow a{color:#8FA5B8}
+svg text{font-family:-apple-system,'Segoe UI',Arial,sans-serif}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;margin:8px 0 0 6px;color:var(--grey)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+</style>
+</head>
+<body>
+<style>
+#gate{position:fixed;inset:0;z-index:9999;background:#14202c;display:flex;align-items:center;justify-content:center;padding:16px}
+#gate form{background:#fff;color:#14202c;padding:28px 26px;border-radius:10px;max-width:340px;width:100%;text-align:center;font-family:inherit}
+#gate h2{margin:0 0 6px;font-size:20px;letter-spacing:.08em}
+#gate p{margin:0 0 14px;font-size:14px;color:#555}
+#gate input{width:100%;padding:10px;font-size:16px;border:1px solid #aaa;border-radius:6px;box-sizing:border-box}
+#gate button{margin-top:12px;width:100%;padding:10px;font-size:16px;border:0;border-radius:6px;background:#C9A227;color:#14202c;font-weight:700;cursor:pointer}
+#gate .err{color:#b00020;font-size:13px;min-height:18px;margin-top:8px}
+body.locked>*:not(#gate){display:none!important}
+</style>
+<div id="gate"><form id="gateForm"><h2>REYKJALAND</h2><p>Trúnaðarmál — sláðu inn lykilorð</p><input type="password" id="gatePw" autocomplete="current-password" autofocus><button type="submit">Opna</button><div class="err" id="gateErr"></div></form></div>
+<script>
+(function(){
+ function h(t){var a=0x811c9dc5,b=0x1234567;for(var i=0;i<t.length;i++){var c=t.charCodeAt(i);a=Math.imul(a^c,16777619)>>>0;b=Math.imul(b+c*31,2246822519)>>>0;b^=b>>>13}return a.toString(16)+'-'+b.toString(16)}
+ var K='c9ba9bce-6e4e8c8b';
+ function ok(){document.body.classList.remove('locked');var g=document.getElementById('gate');if(g)g.remove();window.dispatchEvent(new Event('resize'))}
+ document.body.classList.add('locked');
+ try{if(sessionStorage.getItem('rl_ok')===K){ok();return}}catch(e){}
+ document.getElementById('gateForm').addEventListener('submit',function(e){e.preventDefault();
+  if(h(document.getElementById('gatePw').value)===K){try{sessionStorage.setItem('rl_ok',K)}catch(e){}ok()}
+  else{document.getElementById('gateErr').textContent='Rangt lykilorð';}});
+})();
+</script>
+
+<nav><div class="wrap">
+  <span class="brand">REYKJALAND · ÍB317</span>
+  <a href="#stadan">Staðan</a>
+  <a href="#verkefnid">Verkefnið</a>
+  <a href="#baejarhagur">Bæjarhagur</a>
+  <a href="#model">Reiknilíkan</a>
+  <a href="#innvidalett">Innviðalétt</a>
+  <a href="#vegir">Vegirnir</a>
+  <a href="#leidir">Leiðir</a>
+  <a href="#tilbod">Tilboð lóðarhafa</a>
+  <a href="#trygging">Áhættuvarnir</a>
+  <a href="#beidnin">Beiðnin</a>
+  <a href="#heimildir">Gögn</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>REYKJALAND</h1>
+  <div class="sub">Innviðamælaborð ÍB317 — virði fyrir Mosfellsbæ, ekki byrði</div>
+  <div class="meta">Fundargagn vegna viðræðna við Mosfellsbæ · uppfært október 2026 · Trúnaðarmál</div>
+  <div class="tag">Uppbygging fyrir eldra fólk austan Reykjalundar — fjármögnuð af lóðarhöfum, varin hliðum, á forsendum bæjarins</div>
+</div></header>
+
+<!-- ================= STAÐAN ================= -->
+<section id="stadan"><div class="wrap">
+  <h2>Hvar samtalið stendur</h2>
+  <p class="lede">Bærinn hefur sett skýr viðmið: uppbygging þarf að vera fjárhagslega sjálfbær og má ekki keppa við Blikastaði og Helgafellshverfi um innviðafé. Þetta mælaborð svarar þeim viðmiðum efnislega.</p>
+
+  <div class="timeline">
+    <div class="trow"><div class="tyr">2023</div><div class="tx">Landeigendur ÍB317 óska eftir samtali við bæjaryfirvöld í Mosfellsbæ um skipulagsmál austurbæjarins.</div></div>
+    <div class="trow"><div class="tyr">2025</div><div class="tx">Fulltrúar landeigenda kynna hugmyndir um uppbyggingu byggðar austan Reykjalundar.</div></div>
+    <div class="trow"><div class="tyr">2026 — júní</div><div class="tx">Nýtt samtal milli landeigenda ÍB317 og bæjaryfirvalda Mosfellsbæjar hefst. Hugmyndin að Reykjalandi — lífsgæðahverfi fyrir aldraða — er kynnt, ásamt greiningu á þörf fyrir uppbyggingu fyrir aldraða og innviði.</div></div>
+    <div class="trow"><div class="tyr">2026 — sept</div><div class="tx"><b>Sveitarfélagið óskar eftir frekari viðræðum</b> um hugmyndir landeigenda.</div></div>
+  </div>
+
+  <div class="callout"><b>Kjarni málsins:</b> Reykjaland er ekki beiðni um að Mosfellsbær fjárfesti. Það er tilboð um að landeigendur fjármagni innviðina, bærinn haldi öllu skipulagsvaldi, hver áfangi standist sjálfstætt fjárhagslegt hlið — og bærinn fái skattstofna, öryggisveg og heilsuþjónustu í kaupbæti.</div>
+</div></section>
+
+<!-- ================= VERKEFNIÐ ================= -->
+<section id="verkefnid" class="tint"><div class="wrap">
+  <h2>Verkefnið í tölum</h2>
+  <p class="lede">Fyrsti áfangi er lífsgæðakjarni fyrir eldra fólk í beinum tengslum við Reykjalund — staðfest forsenda 21. ágúst 2026.</p>
+
+  <div class="grid g4">
+    <div class="stat"><div class="n">232</div><div class="l">íbúðir í 1. áfanga: 149 íbúðir fyrir 60+ og 83 þjónustu- og öryggisíbúðir</div></div>
+    <div class="stat"><div class="n">114</div><div class="l">hjúkrunarrými — húsnæði greitt af ríkinu skv. lögum 40/2025</div></div>
+    <div class="stat"><div class="n">34.006</div><div class="l">m² brúttó byggingarmagn 1. áfanga</div></div>
+    <div class="stat"><div class="n gold">551</div><div class="l">íbúðir í ÍB317 fullbyggðu (15 íb./ha)</div></div>
+  </div>
+
+  <h3 class="subh">Byggingaráætlun 1. áfanga</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Hluti</th><th class="num">Brúttó m²</th><th class="num">Nettó m²</th><th class="num">Einingar/rými</th><th>Athugasemd</th></tr>
+    <tr><td>Hjúkrunarheimili</td><td class="num">9.200</td><td class="num">7.400</td><td class="num">114 rými</td><td>Ríkið greiðir húsnæðið (lög 40/2025)</td></tr>
+    <tr><td>Þjónustumiðstöð</td><td class="num">860</td><td class="num">700</td><td class="num">1 kjarni</td><td>Sameiginleg þjónusta hverfisins</td></tr>
+    <tr><td>Þjónustu-/öryggisíbúðir</td><td class="num">5.976</td><td class="num">4.814</td><td class="num">83 íbúðir</td><td>72 m² brúttó að jafnaði</td></tr>
+    <tr><td>Íbúðir fyrir 60+ (neðra íbúðarhverfi)</td><td class="num">17.970</td><td class="num">14.546</td><td class="num">149 íbúðir</td><td>Par-, rað- og fjölbýli</td></tr>
+    <tr class="hl"><td>Samtals</td><td class="num">34.006</td><td class="num">27.460</td><td class="num">232 íb. + 114 rými</td><td></td></tr>
+  </table></div>
+
+  <h3 class="subh">Austurbærinn allur — fimm ávinningssvæði sameiginlegra innviða</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Svæði</th><th class="num">Ný ha</th><th class="num">Nýjar íbúðir</th><th class="num">Fullbyggt ha</th><th class="num">Íbúðir alls</th><th class="num">Íb./ha</th></tr>
+    <tr class="hl"><td>ÍB317 — Austan Reykjalundar</td><td class="num">26,9</td><td class="num">508</td><td class="num">36,7</td><td class="num">551</td><td class="num">15</td></tr>
+    <tr><td>ÍB318 — Suður-Reykir</td><td class="num">14,6</td><td class="num">245</td><td class="num">16,9</td><td class="num">254</td><td class="num">15</td></tr>
+    <tr><td>ÍB321 — Akrar</td><td class="num">14,6</td><td class="num">261</td><td class="num">19,8</td><td class="num">297</td><td class="num">15</td></tr>
+    <tr><td>ÍB11 — Sólvellir</td><td class="num">20,0</td><td class="num">335</td><td class="num">23,4</td><td class="num">351</td><td class="num">15</td></tr>
+    <tr><td>ÍB327 — Helgafellshverfi, nyrsti hluti</td><td class="num">10,0</td><td class="num">150</td><td class="num">10,0</td><td class="num">150</td><td class="num">15</td></tr>
+    <tr><td><b>Samtals</b></td><td class="num"><b>86,1</b></td><td class="num"><b>~1.499</b></td><td class="num"><b>106,8</b></td><td class="num"><b>~1.602</b></td><td class="num"><b>15</b></td></tr>
+  </table></div>
+  <p class="body"><b>Hvernig 551 íbúð fæst:</b> ÍB317 er 36,7 ha fullbyggt (9,8 ha byggðir + 26,9 ha nýir). Með meðalþéttleika 15 íbúðir á hektara gera það 36,7 × 15 = 551 íbúð, og eftir að 43 núverandi íbúðir eru dregnar frá verða 508 nýjar. Sama regla gildir um öll svæðin fimm (fullbyggt flatarmál × 15 − núverandi). Þetta er hlutfallstala en ekki hönnun; aðalskipulagsdrög bæjarins gera ráð fyrir 257 nýjum á ÍB317 (11,2 íb./ha).</p>
+  <p class="note">ÍB317 er um þriðjungur nýrrar uppbyggingar Austurbæjar (31,2% af nýju landi, 33,9% af nýjum íbúðum). Vegakerfið er sameiginlegt; í leið A kostar ÍB317 aðeins fyrsta ~500 m vegáfangann, sem er nálægt mældri hlutdeild þess í öllu netinu (sjá <a href="#leidir">Leiðir</a>).</p>
+
+</div></section>
+
+<!-- ================= BÆJARHAGUR ================= -->
+<section id="baejarhagur"><div class="wrap">
+  <h2>Bæjarhagfræðin — heiðarlegar sviðsmyndir</h2>
+  <p class="lede">Við sýnum bæði það sem styður verkefnið og það sem þarf að stýra. Grunnsviðsmyndin er jákvæð fyrir A-hluta bæjarins; niðursviðið er raunverulegt en samningsstýranlegt.</p>
+
+  <div class="grid g3">
+    <div class="stat"><div class="n bad">−153</div><div class="l">m.kr./ár — varfærin sviðsmynd<br>(35% nettó nýir íbúar, há þjónustuþörf)</div></div>
+    <div class="stat"><div class="n">+52</div><div class="l">m.kr./ár — grunnsviðsmynd<br>(55% nettó nýir íbúar)</div></div>
+    <div class="stat"><div class="n good">+239</div><div class="l">m.kr./ár — hagstæð sviðsmynd<br>(75% nettó nýir íbúar)</div></div>
+  </div>
+
+  <figure class="chart"><div id="annualBars"></div>
+  <figcaption>Árleg nettóáhrif á rekstur Mosfellsbæjar fullbyggðum 1. áfanga — þrjár sviðsmyndir samstarfsskýrslunnar (m.kr./ár)</figcaption></figure>
+
+  <h3 class="subh">Forsendur sviðsmyndanna</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Forsenda / niðurstaða</th><th class="num">Varfærin</th><th class="num">Grunn</th><th class="num">Hagstæð</th></tr>
+    <tr><td>Íbúar í íbúðum</td><td class="num">313</td><td class="num">348</td><td class="num">371</td></tr>
+    <tr><td>Nettó nýir íbúar (aðfluttir í Mosfellsbæ)</td><td class="num">35%</td><td class="num">55%</td><td class="num">75%</td></tr>
+    <tr><td>Útsvarstekjur, viðmið</td><td class="num">139 m.kr.</td><td class="num">237 m.kr.</td><td class="num">339 m.kr.</td></tr>
+    <tr><td>Fasteignaskattur íbúða, nettó</td><td class="num">23 m.kr.</td><td class="num">35 m.kr.</td><td class="num">50 m.kr.</td></tr>
+    <tr><td>Viðbótarrekstrarkostnaður (velferð, viðhald, stjórnsýsla)</td><td class="num">−315 m.kr.</td><td class="num">−220 m.kr.</td><td class="num">−150 m.kr.</td></tr>
+    <tr class="hl"><td>Árleg nettóáhrif</td><td class="num">−153 m.kr.</td><td class="num">+52 m.kr.</td><td class="num">+239 m.kr.</td></tr>
+    <tr class="hl"><td>30 ára núvirði (3,5% raunávöxtun)</td><td class="num">−2,81 ma.kr.</td><td class="num">+0,96 ma.kr.</td><td class="num">+4,40 ma.kr.</td></tr>
+  </table></div>
+  <p class="note">Útsvarsviðmið byggir á útsvarstekjum Mosfellsbæjar 2026 á hvern íbúa (~933 þús. kr.). Aðeins <b>nettó nýir</b> íbúar eru taldir til tekna — flutningur innan bæjarins er ekki ný króna, en losar eldra húsnæði fyrir nýjar fjölskyldur (húsnæðiskeðjan). Jöfnunarsjóðsáhrif, C-flokks skattur af þjónusturými og lóðarleiga eru <i>ekki</i> talin með — varfærni í okkar óhag.</p>
+
+  <h3 class="subh">Eingreiðslur: gatnagerðargjaldsstofn 1. áfanga</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Sviðsmynd gjaldsstofns</th><th class="num">m²</th><th class="num">Reiknað gjald (48.294 kr./m²)</th></tr>
+    <tr><td>Allt byggingarmagn (hámarksskimun)</td><td class="num">34.006</td><td class="num">1.642 m.kr.</td></tr>
+    <tr><td>Allt nema hjúkrunarheimili</td><td class="num">24.806</td><td class="num">1.198 m.kr.</td></tr>
+    <tr><td>Íbúðir eingöngu</td><td class="num">23.946</td><td class="num">1.156 m.kr.</td></tr>
+    <tr><td>Neðra hverfi eingöngu (varfærnasti grunnur)</td><td class="num">17.970</td><td class="num">868 m.kr.</td></tr>
+  </table></div>
+  <p class="note">Gatnagerðargjöld eru lögum samkvæmt ætluð gatnagerð og viðhaldi — þau eru ekki „hagnaður“. Í samningslíkaninu (sjá <a href="#tilbod">Tilboð lóðarhafa</a>) framkvæmir lóðarhafi staðbundna innviði og framkvæmdin telst uppgjör gjaldsins — nákvæmlega eins og samið var um á Blikastöðum.</p>
+</div></section>
+
+<!-- ================= MODEL ================= -->
+<section id="model" class="dark"><div class="wrap">
+  <h2>Gagnvirkt 30 ára líkan — sjóðstreymi bæjarins</h2>
+  <p class="lede">Uppsafnað núvirt sjóðstreymi A-hluta Mosfellsbæjar af 1. áfanga. Stilltu forsendurnar — líkanið sýnir hvenær verkefnið borgar sig fyrir bæinn.</p>
+
+  <div class="panel">
+    <div class="sliders">
+      <div class="presets">
+        <button id="pVar">Varfærin</button>
+        <button id="pGrunn" class="on">Grunn</button>
+        <button id="pHag">Hagstæð</button>
+      </div>
+      <h3>Árlegar tekjur fullbyggt</h3>
+      <div class="sl"><label>Útsvarstekjur (m.kr./ár) <output id="oUtsvar">237</output></label>
+        <input type="range" id="sUtsvar" min="100" max="380" step="1" value="237"></div>
+      <div class="sl"><label>Fasteignaskattur, nettó (m.kr./ár) <output id="oFsk">35</output></label>
+        <input type="range" id="sFsk" min="15" max="60" step="1" value="35"></div>
+      <h3>Árleg gjöld fullbyggt</h3>
+      <div class="sl"><label>Viðbótarrekstrarkostnaður (m.kr./ár) <output id="oRek">220</output></label>
+        <input type="range" id="sRek" min="120" max="360" step="5" value="220"></div>
+      <h3>Vegáfangi 1 — leið A (ÍB317 kostar)</h3>
+      <div class="sl"><label>Kostnaður á km, tveggja akreina stofnvegur (m.kr.) <output id="oKm">904</output></label>
+        <input type="range" id="sKm" min="420" max="1300" step="2" value="904"></div>
+      <div class="sl"><label>Lengd áfanga 1 (m) <output id="oLen">500</output></label>
+        <input type="range" id="sLen" min="300" max="1000" step="50" value="500"></div>
+      <div class="sl"><label>Brú/rör yfir Varmá (m.kr., óstaðfest ágiskun) <output id="oBru">100</output></label>
+        <input type="range" id="sBru" min="0" max="300" step="10" value="100"></div>
+      <h3>Samanburður við heildarnetið (3.050 m)</h3>
+      <div class="sl"><label>Helgafell (hlutur bæjar)</label>
+        <select id="selHelga">
+          <option value="0">Ekki með</option>
+          <option value="906">Núverandi byggð: 906 íbúðir</option>
+          <option value="1370" selected>Fullbyggt: 1.370 íbúðir</option>
+        </select></div>
+      <div class="sl"><label>Íbúðir á þróunarsvæðunum</label>
+        <select id="selData">
+          <option value="rep" selected>Skýrsla v1.1 (ÍB317: 508, alls 1.499)</option>
+          <option value="adal">Aðalskipulagsdrög (ÍB317: 257, alls 1.016)</option>
+        </select></div>
+      <div class="sl"><label>Teigsland (ÍB-316, 200 íbúðir) í vegapotti</label>
+        <select id="selTeig">
+          <option value="1" selected>Með</option>
+          <option value="0">Ekki með</option>
+        </select></div>
+      <h3>Leið B — forsendur um endurkröfu</h3>
+      <div class="sl"><label>Ár þar til síðari svæði tengjast <output id="oN">8</output></label>
+        <input type="range" id="sN" min="1" max="20" step="1" value="8"></div>
+      <div class="sl"><label>Líkur á endurgreiðslu (%) <output id="oP">50</output></label>
+        <input type="range" id="sP" min="0" max="100" step="5" value="50"></div>
+      <h3>Tími og ávöxtun</h3>
+      <div class="sl"><label>Uppbyggingartími að fullri byggð (ár) <output id="oRamp">6</output></label>
+        <input type="range" id="sRamp" min="1" max="10" step="1" value="6"></div>
+      <div class="sl"><label>Ávöxtunarkrafa (raun, %) <output id="oVextir">3,5</output></label>
+        <input type="range" id="sVextir" min="3.0" max="4.1" step="0.1" value="3.5"></div>
+      <button class="reset" id="btnReset">Endurstilla á grunnsviðsmynd</button>
+    </div>
+    <div>
+      <div class="kpis">
+        <div class="kpi"><div class="n" id="kArleg">+52</div><div class="l">m.kr./ár fullbyggt</div></div>
+        <div class="kpi"><div class="n" id="kNPV">+0,8</div><div class="l">ma.kr. núvirði 30 ára</div></div>
+        <div class="kpi"><div class="n" id="kPayback">ár 8</div><div class="l">uppsafnað núvirði verður jákvætt</div></div>
+        <div class="kpi"><div class="n" id="kC1">552</div><div class="l">m.kr. kostar ÍB317 — vegáfangi 1 (leið A)</div></div>
+        <div class="kpi"><div class="n" id="kP">456</div><div class="l">m.kr. hlutur ÍB317 í öllu netinu (til samanburðar)</div></div>
+      </div>
+      <figure class="chart"><div id="npvCurve"></div>
+      <figcaption>Uppsafnað núvirt sjóðstreymi Mosfellsbæjar af 1. áfanga Reykjalands (ma.kr.) — tekjur vaxa með uppbyggingu. Vegáfangi 1 er kostaður af ÍB317 (leið A) og kemur því ekki fram í sjóðstreymi bæjarins</figcaption></figure>
+      <p class="note" id="helgaNote"></p>
+      <p class="note">Líkanið er skimun, ekki spá. Í leið A kostar ÍB317 fyrsta vegáfangann (um 500 m tengingu með brú eða röri yfir Varmá) að fullu, svo bærinn leggur ekkert út fyrir vegum í áfanga 1. Tekjur vaxa línulega yfir uppbyggingartímann. Staðbundnir innviðir hverfisins kosta bæinn ekkert — lóðarhafi framkvæmir þá og fjármagnar (sjá Tilboð lóðarhafa). Kafli um leiðirnar tvær og rökstuðning fyrir leið A er í kaflanum <a href="#leidir">Leiðir</a>.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- ================= INNVIÐALÉTT ================= -->
+<section id="innvidalett"><div class="wrap">
+  <h2>Innviðalétt byggð — skólalaus jafna</h2>
+  <p class="lede">Dýrasti hluti nýrra hverfa er skóla- og leikskólauppbygging. Byggð fyrir eldra fólk sneiðir fram hjá honum — og léttir um leið á húsnæðiskeðju bæjarins.</p>
+
+  <div class="grid g3">
+    <div class="stat"><div class="n">64%</div><div class="l">af innviðakostnaði Blikastaða eru skólar og leikskólar (KPMG-viðmið: 17 af 26,3 ma.kr.)</div></div>
+    <div class="stat"><div class="n">0</div><div class="l">nýir grunnskólar sem 232 íbúðir + 114 hjúkrunarrými kalla á</div></div>
+    <div class="stat"><div class="n gold">11,7%</div><div class="l">íbúa Mosfellsbæjar eru 67+ (1.667 manns) — og hlutfallið vex</div></div>
+  </div>
+
+  <h3 class="subh">Innviðakostnaður sveitarfélags á íbúð</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Svæði</th><th class="num">m.kr. á íbúð</th><th>Forsenda</th></tr>
+    <tr><td>Blikastaðir</td><td class="num">7,0</td><td>KPMG-viðmið fyrir hefðbundið fjölskylduhverfi</td></tr>
+    <tr><td>Austurbær</td><td class="num">7,0</td><td>Sama viðmið yfirfært á Austurbæ</td></tr>
+    <tr class="hl"><td>ÍB317 (Reykjaland)</td><td class="num">4,1</td><td>Raunþörf: engir nýir skólar eða leikskólar</td></tr>
+  </table></div>
+
+  <div class="grid g2" style="margin-top:20px">
+    <div class="card"><h3>Hvers vegna „innviðalétt“ stenst skoðun</h3>
+      <ul>
+        <li>Engin bein þörf á nýjum leik- eða grunnskóla af 1. áfanga — aldurssamsetningin er kjarni verkefnisins, ekki eftiráskýring. Fordæmi: 50+ byggð í Urriðaholti var samþykkt einmitt á þessum rökum, með þinglýstum kvöðum.</li>
+        <li>Hjúkrunarheimilið: ríkið greiðir húsnæðið eftir lagabreytingu 2025 — áður báru sveitarfélög 15% stofnkostnaðar.</li>
+        <li>Húsnæðiskeðjan: sérhæfðar íbúðir losa fjölskyldueignir í grónum hverfum þar sem skólarnir standa nú þegar með lausa afkastagetu.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>… og hvað þarf samt að fjármagna</h3>
+      <ul>
+        <li>Eldri íbúar kalla á heimastuðning, akstur og félagsstarf — bærinn ver í ár 258,6 m.kr. í þjónustumiðstöð aldraðra. Sviðsmyndirnar gera ráð fyrir 150–315 m.kr. viðbótarkostnaði á ári og samningurinn á að skilgreina ábyrgð ríkis, rekstraraðila og bæjar áður en áfangi virkjast.</li>
+        <li>Götur, stígar, lýsing og snjómokstur eru óháð aldri íbúa — viðhald eftir afhendingu er inni í rekstrarsviðsmyndunum.</li>
+        <li>„Innviðalétt“ er ekki „kostnaðarlaus“ — það er einmitt þess vegna sem líkanið sýnir −153 m.kr. niðursviðið opinskátt og bindur hvern áfanga við fjárhagslegt hlið.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- ================= VEGIR ================= -->
+<section id="vegir" class="tint"><div class="wrap">
+  <h2>Nýr Kóngsvegur og Nýr Bjargsvegur — vegakerfið samkvæmt aðalskipulagi</h2>
+  <p class="lede">Aðalskipulag Mosfellsbæjar gerir ráð fyrir rúmlega 3 km af nýjum vegum austan byggðar. Fyrsti áfangi Reykjalands þarf hins vegar aðeins um 500 m tengingu — og það er hún sem ÍB317 kostar.</p>
+
+  <div class="grid g3">
+    <div class="stat"><div class="n">3.050 m</div><div class="l">nýir vegir samkvæmt aðalskipulagi: Nýi Kóngsvegur 1.100 m + Nýi Bjargsvegur 1.950 m</div></div>
+    <div class="stat"><div class="n gold">~500 m</div><div class="l">tenging sem fyrsti áfangi þarf (með brú eða röri yfir Varmá)</div></div>
+    <div class="stat"><div class="n" id="stNet">2,8 ma.kr.</div><div class="l">áætlaður kostnaður alls netsins (miðáætlun 904 m.kr. á km + brú) — ekki hluti af beiðninni</div></div>
+  </div>
+
+  <p class="body" style="margin-top:18px"><b>Öryggisrökin standa sjálfstætt:</b> Helgafellshverfi hefur í dag eina meginleið. Nýr Bjargsvegur skapar aðra tengingu út úr hverfinu — það er ávinningur núverandi íbúa og almannavarna, óháð allri nýrri byggð. Þess vegna er eðlilegt að sá hluti netsins sem þjónar núverandi byggð sé á hendi bæjarins, og að Teigsland og önnur þróunarsvæði greiði sína kafla þegar þau tengjast.</p>
+
+  <h3 class="subh">Kaflar, lengdir og kostnaður</h3>
+  <div class="tablewrap" id="segTbl"></div>
+  <p class="note">Lengdir samkvæmt kortagreiningu á vegum aðalskipulags (október 2026). Kostnaður er reiknaður út frá kostnaði á km úr kostnaðarlíkani vegagerðar (lág/mið/há: 420 / 904 / 1.300 m.kr. á km) og stillingum í líkaninu. Brú eða rör yfir Varmá er ekki í kostnaði á km og er óstaðfest ágiskun þar til verkfræðingur metur hana.</p>
+
+  <h3 class="subh">Skipting kostnaðar við vegagerð</h3>
+  <figure class="chart"><div id="roadShare"></div>
+  <figcaption id="roadCap">Hlutfallsleg skipting alls netsins (3.050 m) milli bæjar, ÍB317, Teigslands og annarra svæða (uppfærist með líkaninu)</figcaption></figure>
+
+  <h3 class="subh">Hlutdeild í öllu netinu — til samanburðar</h3>
+  <p class="body"><b>Hvernig 551 íbúð fæst:</b> ÍB317 er 36,7 ha fullbyggt (9,8 ha byggðir + 26,9 ha nýir). Með meðalþéttleika 15 íbúðir á hektara gera það 36,7 × 15 = 551 íbúð, og eftir að 43 núverandi íbúðir eru dregnar frá verða 508 nýjar. Sama regla gildir um öll svæðin fimm (fullbyggt flatarmál × 15 − núverandi). Þetta er hlutfallstala en ekki hönnun; aðalskipulagsdrög bæjarins gera ráð fyrir 257 nýjum á ÍB317 (11,2 íb./ha).</p>
+  <div class="tablewrap" id="areaTbl"></div>
+  <p class="note">Skipt er eftir fjölda nýrra íbúða; Helgafell suðurhlíðar (ÍB-302) telst til bæjarins þar sem íbúar þar hafa þegar greitt gatnagerðargjöld. Hjúkrunarrými eru ekki talin með í íbúðafjölda. Teigsland (ÍB-316) er með því Nýi Kóngsvegur liggur meðfram því. Heimildir: samstarfsskýrsla v1.1 (21.8.2026), frumdrög aðalskipulags Mosfellsbæjar 2022–2040, bls. 23. Taflan er til samanburðar við leið A og er ekki tillaga um skiptingu.</p>
+</div></section>
+
+<!-- ================= LEIÐ A ================= -->
+<section id="leidir"><div class="wrap">
+  <h2>Tvær leiðir fyrir fyrsta vegáfanga — og hvers vegna leið A</h2>
+  <p class="lede">Spurningin er hver á að kosta ~500 m tenginguna sem fyrsti áfangi þarf. Tvær leiðir koma til greina; leið A er einfaldasta, kostar bæinn ekkert og er næstum jafngild réttum hlut ÍB317 af öllu netinu.</p>
+
+  <div class="tablewrap" id="leidirTbl"></div>
+  <p class="note" id="leidirNote"></p>
+
+  <h3 class="subh">Rökstuðningur fyrir leið A</h3>
+  <div class="grid g2">
+    <div class="card"><h3>Hvers vegna A</h3>
+      <ul>
+        <li><b>Sá sem nýtur kaflans núna greiðir hann.</b> Enginn greiðir fyrir veg sem hann hefur ekki not af, svo það koma engar spurningar um jafnræði eða meðalhóf.</li>
+        <li><b>Kostnaðurinn er mældur við réttan hlut ÍB317 af öllu netinu.</b> <span id="rA2">–</span></li>
+        <li><b>Bærinn ber engan kostnað og enga áhættu í áfanga 1.</b> NPV bæjarins er <span id="rA4">–</span> ma.kr. án þess að hann leggi út krónu; engin brúarfjármögnun og engin ný fjárheimild.</li>
+        <li><b>Endurkrafa á síðari svæði er verðlítil.</b> Hún væri í besta falli <span id="rA5">–</span> m.kr. að núvirði (ef öll svæðin tengjast eftir <span id="rA6">–</span> ár) og <span id="rA7">–</span> m.kr. miðað við <span id="rA8">–</span>% líkur — á móti kvöðum á landeigendur sem eru ekki við borðið og hafa ekkert skipulag.</li>
+        <li><b>Hún útilokar ekkert.</b> ÍB317 getur áfram samið sérstaklega við Teigsland og önnur svæði um endurgreiðslu, utan samnings við bæinn.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Skilyrði ÍB317 fyrir leið A</h3>
+      <ul>
+        <li>Kostnaðurinn við áfanga 1 telst til uppgjörs gatnagerðargjalda áfangans (sama regla og á Blikastöðum: framkvæmd = fullnaðargreiðsla).</li>
+        <li>Engin frekari framlög til kerfisvega vegna áfanga 1: lokauppgjör við bæinn.</li>
+        <li>Áfangi 1 er skilgreindur með lengd, legu, brú/ræsi og skilalýsingu áður en samið er; kostnaðarþak fyrir ÍB317.</li>
+        <li>Aðrir kaflar netsins (Kóngsvegur meðfram Teigslandi, tengingin að Helgafelli o.fl.) eru kostaðir af þeim sem njóta þeirra þegar þeir verða að veruleika; þeir eru ekki hluti af beiðninni.</li>
+        <li>Lögfræðiálit á að tengja vegaframkvæmd við uppgjör gatnagerðargjalda og á jafnræði gagnvart öðrum landeigendum.</li>
+      </ul>
+      <p class="note" style="margin-top:10px">Áfangi 1 er kaflinn meðfram Reykjalandi I (503 m skv. korti, reiknað sem 500 m). Brú eða rör yfir Varmá er reiknað á 100 m.kr. til viðmiðunar; kostnaðinn þarf að staðfesta með verkfræðingi.</p>
+    </div>
+  </div>
+</div></section>
+
+
+<!-- ================= TILBOÐ ================= -->
+<section id="tilbod"><div class="wrap">
+  <h2>Tilboð lóðarhafa — sannreynt samningslíkan bæjarins sjálfs</h2>
+  <p class="lede">Ekkert í þessu líkani er nýtt fyrir Mosfellsbæ. Það er sama arkitektúr og bærinn samdi um á Blikastöðum 2022 — skalað að minna og einfaldara verkefni.</p>
+
+  <div class="flowrow">
+    <div class="flow gold"><b>Lóðarhafi framkvæmir og fjármagnar</b><span>Allar götur, stígar, lagnir, ofanvatn, lýsing og opin svæði innan hverfisins — samkvæmt skilalýsingu Mosfellsbæjar, á fullri ábyrgð og kostnað ÍB317.</span></div>
+    <div class="arrow">→</div>
+    <div class="flow"><b>Framkvæmdin = uppgjör gatnagerðargjalda</b><span>Sama regla og í 7. gr. Blikastaðasamningsins: lokið verk með athugasemdalausri lokaúttekt telst fullnaðargreiðsla gatnagerðargjalda áfangans.</span></div>
+    <div class="arrow">→</div>
+    <div class="flow"><b>Bærinn eignast innviðina</b><span>Eftir lokaúttekt afhendast götur, stígar og opin svæði bænum — ásamt landi undir þau, endurgjaldslaust skv. 39. gr. skipulagslaga.</span></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div class="card"><h3>Hvað bærinn fær</h3>
+      <ul>
+        <li><b>Engin brúarfjármögnun:</b> bærinn leggur aldrei út fyrir staðbundnum innviðum og ber engan framkvæmdakostnað fram að afhendingu.</li>
+        <li><b>Tryggingar:</b> verktrygging/bankaábyrgð fyrir hvern áfanga áður en framkvæmdir hefjast (fyrirmynd: 14. gr. Blikastaðasamnings).</li>
+        <li><b>Fyrsti vegáfangi á kostnað ÍB317:</b> ÍB317 kostar og byggir ~500 m tengingu fyrsta áfanga (með brú eða röri yfir Varmá) að fullu — án þátttöku bæjarins og án frekari framlaga til kerfisvega vegna áfanga 1. Aðrir kaflar netsins eru kostaðir af þeim sem njóta þeirra (sjá Leið A).</li>
+        <li><b>Skipulagsvaldið óskert:</b> lóðarhafi vinnur deiliskipulagstillögu á sinn kostnað; formleg afgreiðsla, almannahagsmunamat og samráð eru áfram bæjarins.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Hvað lóðarhafi fær</h3>
+      <ul>
+        <li><b>Fyrirsjáanleika:</b> skýr ákvörðunarhlið og tímalínu í stað óvissu — það er allt og sumt sem beðið er um núna.</li>
+        <li><b>Uppgjörsreglu:</b> framkvæmd innviða í stað tvígreiðslu — framlag til sameiginlegra vega á ekki að greiðast aftur með almennu gatnagerðargjaldi.</li>
+        <li><b>Jafnræði:</b> sama formúla og birtingarstig fyrir öll fimm svæðin — fyrsta svæðið niðurgreiðir ekki þau síðari.</li>
+      </ul>
+      <p class="note" style="margin-top:10px">ÍB317 gefur bænum ekki peninga — og biður bæinn ekki um peninga. Verkefnið þarf að ganga upp báðum megin borðs, og líkanið er hannað þannig.</p>
+    </div>
+  </div>
+
+  <h3 class="subh">Fordæmin — öll innan seilingar</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Fordæmi</th><th>Hvað það staðfestir</th><th>Yfirfærsla á Reykjaland</th></tr>
+    <tr class="hl"><td>Blikastaðaland (Mos., 2022)</td><td>Landeigandi annast alla gatnagerð á eigin kostnað; framkvæmdin telst fullnaðargreiðsla gatnagerðargjalda; áfangaviðaukar, vísitölutrygging, verktryggingar, fjárhagslegt stöðvunarhlið bæjarins (gr. 6.3/10(f)).</td><td>Sami samningsarkitektúr, skalað niður — Reykjaland er ~7% af íbúðamagni Blikastaða.</td></tr>
+    <tr><td>Leirvogstunga & Helgafell IV (Mos.)</td><td>Eldri Mosfellsbæjarfordæmi: landeigandi annast gatnagerð og ber fjárhagslega áhættu; skuldbindingar fylgja réttindum við framsal.</td><td>Bein heimafordæmi — engin ný stjórnsýsluleg nýjung.</td></tr>
+    <tr><td>Vogabyggð (Rvk.)</td><td>Sameiginlegur samningsrammi margra landeigenda: verðtryggt framlag á m² byggingarmagns í innviðapott, gjaldfellur við virkjun heimilda.</td><td>Fyrirmynd að fimm svæða formúlunni fyrir Bjargsveg/Kóngsveg.</td></tr>
+    <tr><td>Urriðaholt (Garðabær)</td><td>Áfangasamningar sveitarfélags og einkalandeiganda; 50+ byggð samþykkt á rökum um minni umferð og skólaálag, tryggð með þinglýstum kvöðum; stofnvegatenging boðin út sameiginlega með Vegagerðinni.</td><td>Beinasta fordæmið fyrir aldursmiðaða, innviðalétta byggð.</td></tr>
+    <tr><td>Arnarland (Garðabær)</td><td>Sveitarfélag heldur utan um hönnun, útboð og eftirlit gatna þótt einkaaðili þrói svæðið; kerfisinnviðir samræmdir milli sveitarfélaga og Vegagerðar.</td><td>Verklag fyrir skilalýsingu, útboð og gæðastjórn.</td></tr>
+    <tr><td>Hlíðarendi (Rvk.)</td><td>Framlög geta verið í formi framkvæmda, lands eða fullgerðra mannvirkja — ekki bara peninga.</td><td>Sveigjanleiki í útfærslu framlags ÍB317.</td></tr>
+  </table></div>
+</div></section>
+
+<!-- ================= ÁHÆTTUVARNIR ================= -->
+<section id="trygging" class="tint"><div class="wrap">
+  <h2>Áhættuvarnir bæjarins — sex skilyrði og hlið</h2>
+  <p class="lede">Lærdómur Blikastaða er skýr: tímamunur framkvæmda og tekna er raunveruleg áhætta. Líkan Reykjalands er hannað til að loka því bili — ekki fela það.</p>
+
+  <div class="grid g2">
+    <div class="dcard"><h3>Lærdómurinn um tímamuninn</h3>
+      <p>Eigin greining Mosfellsbæjar (mars 2025) sýndi að tveggja ára bil milli gatnagerðarframkvæmda og innheimtu gjalda getur numið um <b>−540 m.kr. í núvirði</b> — og eins árs bil um −83 m.kr. Gatnagerðargjöld ein og sér standa þá ekki undir framkvæmda- og fjármagnskostnaði.</p>
+      <p style="margin-top:8px">Í líkani Reykjalands myndast þetta bil ekki hjá bænum: <b>lóðarhafi fjármagnar framkvæmdirnar sjálfur þar til formleg afhending fer fram.</b> Tímamunaráhættan liggur hjá þeim sem getur borið hana.</p>
+    </div>
+    <div class="dcard"><h3>Sex skilyrði jákvæðs bæjarhagkerfis</h3>
+      <ul>
+        <li>Engin framkvæmd án kostnaðaráætlunar, áfangaskiptingar og samþykktrar fjármögnunar.</li>
+        <li>Lóðarhafi fjármagnar og framkvæmir staðbundna innviði skv. skilalýsingu bæjarins.</li>
+        <li>Nýi Bjargsvegur/Nýi Kóngsvegur eru sameiginlegir kerfisinnviðir — fyrsti áfangi kostar aðeins ~500 m tengingu, aðrir kaflar eru kostaðir af þeim sem njóta þeirra.</li>
+        <li>Sama gagnsæja reglan fyrir öll ávinningssvæðin.</li>
+        <li>Samkomulag ríkis, rekstraraðila og bæjar um hjúkrunarrými liggi fyrir áður en óafturkræfar skuldbindingar stofnast.</li>
+        <li>Hver áfangi standist sjálfstætt fjárhagslegt hlið: núvirði ≥ 0, engin brúarfjármögnun bæjar, fullnægjandi tryggingar.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="subh">Ákvörðunarhlið — bærinn getur stöðvað á hverju þrepi</h3>
+  <div class="tablewrap"><table>
+    <tr><th>Hlið</th><th>Tími</th><th>Verkefni</th><th>Skilyrði til að halda áfram</th></tr>
+    <tr><td>0. Umboð</td><td>0–1 mán.</td><td>Viðræðuheimild og verkefnastjórn</td><td>Engin skipulags- eða fjárfestingarskuldbinding</td></tr>
+    <tr class="hl"><td>1. Gagnagrunnur + deiliskipulagsvinna</td><td>1–6 mán.</td><td>Eignir, veglína, jarðkönnun, veitur, umferð, markaður — og deiliskipulagstillaga unnin á kostnað ÍB317</td><td>Sameiginlegt gagnaherbergi; bærinn stýrir forsenduskrá</td></tr>
+    <tr><td>2. Frumhagkvæmni</td><td>3–6 mán.</td><td>30 ára bæjarhagfræði og stofnkostnaður, óháð staðfesting</td><td>Grunnsviðsmynd NPV ≥ 0</td></tr>
+    <tr><td>3. Rammasamningur</td><td>6–9 mán.</td><td>Ábyrgð, formúla, tryggingar, hlið</td><td>Lögfræði- og jafnræðismat; samþykki bæjarstjórnar</td></tr>
+    <tr><td>4. Skipulagsferli</td><td>9–24 mán.</td><td>Aðalskipulag/rammi/deiliskipulag, umhverfismat, samráð</td><td>Ekkert gengið á lögbundið mat eða samráð</td></tr>
+    <tr><td>5. Fyrsti áfangi</td><td>eftir skipulag</td><td>Verk- og greiðsluviðauki, útboð, framkvæmd</td><td>Full fjármögnun, tryggingar, ríkissamningur um hjúkrunarhluta</td></tr>
+    <tr><td>6. Afhending/vöktun</td><td>árlega</td><td>Úttektir, fjárhags- og þjónustumælikvarðar</td><td>Næsti áfangi aðeins ef fyrri stenst viðmið</td></tr>
+  </table></div>
+
+  <div class="callout"><b>Jafnræði og fordæmi:</b> allt sem hér er lagt til styðst við gildandi lagaheimildir og samninga sem Mosfellsbær hefur þegar gert. Opin formúla, birtar forsendur og óháð verðmat verja bæinn gagnvart jafnræðiskröfum annarra landeigenda — og ÍB317 gagnvart því að greiða fyrir aðra.</div>
+</div></section>
+
+<!-- ================= BEIÐNIN ================= -->
+<section id="beidnin"><div class="wrap">
+  <h2>Beiðnin: heimilið deiliskipulagsvinnu núna</h2>
+  <p class="lede">Það sem beðið er um kostar bæinn ekkert, skuldbindur hann til einskis — og opnar tímaglugga sem lokast ekki aftur jafn hagstæður.</p>
+
+  <div class="grid g2">
+    <div class="card"><h3>Hvað ÍB317 biður um</h3>
+      <ul>
+        <li>Að bæjarráð samþykki <b>afmarkaðar viðræður</b> um sameiginlega frumhagkvæmniathugun (hlið 0–2).</li>
+        <li>Að ÍB317 fái samhliða <b>heimild til að vinna tillögu að deiliskipulagi</b> 1. áfanga á eigin kostnað, í samráði við skipulagsfulltrúa — formleg afgreiðsla og allt skipulagsvald áfram hjá bænum (sbr. 3.3. gr. Blikastaðasamnings og 40. gr. skipulagslaga).</li>
+        <li>Að vegtengingin austur úr Helgafellshverfi verði skoðuð í sama ferli — öryggismálið og byggðaþróunin eru sama viðfangsefnið.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Hvers vegna núna</h3>
+      <ul>
+        <li><b>Skipulagsferlið tekur 2–3 ár hvort eð er.</b> Ákvörðun í dag þýðir fyrstu íbúðir í fyrsta lagi 2029–2030 — þegar 67+ hópur bæjarins verður enn stærri en 1.667 í dag.</li>
+        <li><b>Ríkisglugginn er opinn:</b> lög 40/2025 færa húsnæðiskostnað hjúkrunarheimila til ríkisins og FSRE er nú þegar að bjóða út hjúkrunarrými í Mosfellsbæ — eftirspurn ríkisins eftir rýmum er staðfest.</li>
+        <li><b>Reykjalundur:</b> húsnæðismál hans kalla á lausnir; skipulagsheimildir austan hans eru forsenda samþættrar þróunar heilsusvæðisins.</li>
+        <li><b>Deiliskipulag er ekki framkvæmdaloforð:</b> hvert framkvæmdaskref á eftir er varið sjálfstæðu fjárhagslegu hliði bæjarins.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="subh">Drög að bókun bæjarráðs (tillaga ÍB317)</h3>
+  <div class="quote">„Bæjarráð samþykkir að hefja afmarkaðar viðræður við fyrirsvarsmenn ÍB317 um sameiginlega frumhagkvæmniathugun vegna uppbyggingar austan Reykjalundar og tengdra vegainnviða, og heimilar landeigendum að vinna tillögu að deiliskipulagi 1. áfanga á eigin kostnað í samráði við skipulagsfulltrúa. Viðræðurnar og skipulagsvinnan fela ekki í sér fyrirheit um byggingarheimildir eða fjárveitingu. Áður en tekin verður afstaða til rammauppbyggingarsamnings skulu liggja fyrir óháð kostnaðar- og bæjarhagfræðigreining, tillaga að sanngjarnri kostnaðarskiptingu milli ávinningssvæða, lögfræðiálit um gjaldtöku og jafnræði, auk afstöðu ríkis og rekstraraðila til hjúkrunarheimilis.“
+    <span class="who">Byggt á 12. kafla samstarfsskýrslu ÍB317, 21.8.2026 — með viðbót um deiliskipulagsheimildina</span></div>
+
+  <h3 class="subh">Fyrstu 30 dagarnir</h3>
+  <div class="grid g3">
+    <div class="card"><h3>Formsatriði</h3><ul>
+      <li>Vottuð eigenda- og umboðsskrá ÍB317</li>
+      <li>Formlegt skipulagskort með veglínum og landamerkjum</li>
+      <li>Undirbúningssamkomulag með kostnaðarþaki og stöðvunarheimild</li></ul></div>
+    <div class="card"><h3>Greiningar</h3><ul>
+      <li>Umfang óháðs verkfræði- og bæjarhagfræðimats skilgreint</li>
+      <li>Forsenduskrá samþykkt — útgáfustýrð og aðgengileg báðum</li>
+      <li>Búsetu- og aðflutningsgreining hafin</li></ul></div>
+    <div class="card"><h3>Samtöl</h3><ul>
+      <li>Forviðræður við ríkið um 114 hjúkrunarrými</li>
+      <li>Eigendur ÍB318/ÍB321/ÍB11/ÍB327 kallaðir að gagnasöfnun — án skipulagsfyrirheita</li>
+      <li>Samráð við Vegagerðina um veglínu og veghald</li></ul></div>
+  </div>
+</div></section>
+
+<!-- ================= HEIMILDIR ================= -->
+<section id="heimildir" class="dark"><div class="wrap">
+  <h2>Gögn og heimildir</h2>
+  <p class="lede">Allar tölur mælaborðsins eru raktar í frumgögn.</p>
+  <div class="grid g2">
+    <div class="dcard"><h3>Verkefnisgögn ÍB317</h3><ul>
+      <li>Samstarfs- og fjármögnunarlíkan fyrir Mosfellsbæ — skýrsla ÍB317, útg. 1.1, 21.8.2026 (byggingaráætlun, sviðsmyndir, formúlur, hlið)</li>
+      <li>Innviðagreining Mosfellsbær — ÍB317 + Blikastaðir, jan. 2026 (KPMG-viðmið, kostnaður á íbúð)</li>
+      <li>Kostnaðarlíkan vegagerðar (lág/mið/há: 420 / 904 / 1.300 m.kr. á km)</li>
+      <li>Lengdir nýrra vega (3.050 m) úr kortagreiningu á aðalskipulagi og Frumdrög aðalskipulags Mosfellsbæjar 2022–2040, bls. 23 (íbúðatölur svæða, Helgafell, Teigsland)</li>
+      <li>Reykjaland — Bygg.magn, innviðir, tekjur, gjöld (reiknilíkan, ágúst 2026)</li>
+      <li>Innviðasamningar — fyrirmyndir (Urriðaholt, Vogabyggð, Arnarland, Vetrarmýri, Hlíðarendi)</li>
+      <li>Lífsgæðabyggðin Reykjaland — kynning 25.6.2026</li>
+    </ul></div>
+    <div class="dcard"><h3>Opinber gögn og samningar</h3><ul>
+      <li>Samstarfssamningur Mosfellsbæjar og Blikastaðalands ehf., 5.5.2022 (gr. 3.3, 5, 7, 8, 10, 13, 14)</li>
+      <li>Minnisblað bæjarstjóra til bæjarráðs 28.3.2025 (VSÓ-innviðamat, Arcur-núvirðing tímamunar)</li>
+      <li>Fundargerð skipulagsfulltrúa 23.10.2025 — fundur um Heilsubyggð austan Reykjalundar</li>
+      <li>Fjárhagsáætlun Mosfellsbæjar 2026 (útsvar, gjaldskrár, fjárfestingar)</li>
+      <li>Gjaldskrá gatnagerðargjalda frá 1.7.2026 (48.294 kr./m²)</li>
+      <li>Lög nr. 40/2025 um hjúkrunarheimili · lög nr. 153/2006 um gatnagerðargjald · skipulagslög nr. 123/2010</li>
+      <li>KPMG — áhættugreining Mosfellsbæjar (innviðakostnaður Blikastaða)</li>
+    </ul></div>
+  </div>
+  <p class="note" style="margin-top:18px">Fjárhæðir eru skimun á verðlagi 2026 nema annað sé tekið fram. Mælaborðið er vinnugagn ÍB317 ehf. og kemur ekki í stað verkfræðilegrar kostnaðaráætlunar, lögfræðiálits eða formlegrar fjárhagsáætlunar sveitarfélagsins.</p>
+</div></section>
+
+<footer><div class="wrap">
+  <b>Reykjaland — Innviðamælaborð ÍB317</b> · unnið úr samstarfsskýrslu 21.8.2026 og frumgögnum verkefnisins · Íslenskar fasteignir ehf. f.h. ÍB317 ehf.
+  <div class="lockrow"><a href="#" id="lockBtn">Læsa síðunni á þessu tæki</a></div>
+</div></footer>
+
+<script>
+"use strict";
+/* ---------- helpers ---------- */
+const fmt1 = x => (Math.round(x*10)/10).toFixed(1).replace('.',',');
+const fmt0 = x => Math.round(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+
+/* ---------- chart 1: annual scenario bars ---------- */
+(function(){
+  const data=[{l:'Varfærin',v:-153,c:'#B03A2E'},{l:'Grunn',v:52,c:'#2E6FBA'},{l:'Hagstæð',v:239,c:'#1F8A5D'}];
+  const W=640,H=280,pad={l:56,r:16,t:24,b:34};
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'Árleg nettóáhrif sviðsmynda'});
+  const min=-200,max=300;
+  const y=v=>pad.t+(max-v)/(max-min)*(H-pad.t-pad.b);
+  // gridlines
+  [-200,-100,0,100,200,300].forEach(g=>{
+    el('line',{x1:pad.l,x2:W-pad.r,y1:y(g),y2:y(g),stroke:g===0?'#5A6B7A':'#E4EBF1','stroke-width':g===0?1.5:1},svg);
+    el('text',{x:pad.l-8,y:y(g)+4,'text-anchor':'end','font-size':11,fill:'#5A6B7A'},svg).textContent=g;
+  });
+  const bw=110,gap=(W-pad.l-pad.r-3*bw)/4;
+  data.forEach((d,i)=>{
+    const x=pad.l+gap+i*(bw+gap);
+    const y0=y(0),y1=y(d.v);
+    const top=Math.min(y0,y1),h=Math.abs(y0-y1);
+    const r=el('rect',{x,y:top,width:bw,height:h,fill:d.c,rx:4},svg);
+    r.addEventListener('mouseenter',()=>r.setAttribute('opacity','0.82'));
+    r.addEventListener('mouseleave',()=>r.setAttribute('opacity','1'));
+    el('text',{x:x+bw/2,y:d.v>=0?y1-8:y1+16,'text-anchor':'middle','font-size':14,'font-weight':700,fill:'#1D3A57'},svg).textContent=(d.v>0?'+':'')+d.v;
+    el('text',{x:x+bw/2,y:H-12,'text-anchor':'middle','font-size':12.5,fill:'#5A6B7A'},svg).textContent=d.l;
+  });
+  el('text',{x:pad.l-8,y:14,'text-anchor':'end','font-size':10.5,fill:'#5A6B7A'},svg).textContent='m.kr./ár';
+  document.getElementById('annualBars').appendChild(svg);
+})();
+
+/* ---------- chart 3: dynamic share bar ---------- */
+function drawRoad(parts){
+  const host=document.getElementById('roadShare');host.innerHTML='';
+  const W=640,H=120,pad={l:16,r:16,t:20,b:44};
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'Skipting vegakerfis'});
+  const total=100,bw=W-pad.l-pad.r,bh=40;
+  let acc=0;
+  parts.filter(p=>p.v>0.05).forEach(p=>{
+    const x=pad.l+acc/total*bw, w=Math.max(p.v/total*bw-2,0);
+    el('rect',{x,y:pad.t,width:w,height:bh,fill:p.c,rx:4},svg);
+    el('text',{x:x+w/2,y:pad.t+bh/2+4,'text-anchor':'middle','font-size':12,'font-weight':700,fill:'#fff'},svg).textContent=Math.round(p.v)+'%';
+    el('text',{x:x+w/2,y:pad.t+bh+22,'text-anchor':'middle','font-size':11.5,fill:'#5A6B7A'},svg).textContent=p.s;
+    acc+=p.v;
+  });
+  host.appendChild(svg);
+  const lg=document.createElement('div');lg.className='legend';
+  lg.innerHTML=parts.filter(p=>p.v>0.05).map(p=>`<span><i style="background:${p.c}"></i>${p.l}</span>`).join('');
+  host.appendChild(lg);
+}
+
+/* ---------- data ---------- */
+const AREAS=[
+  {n:'ÍB317 Austan Reykjalundar',ha:36.7,ex:43,rep:508,adal:257,dRep:15.0,dAdal:11.2,me:true},
+  {n:'ÍB318 Suður-Reykir',ha:16.9,ex:9,rep:245,adal:191,dRep:15.0,dAdal:13.7},
+  {n:'ÍB321 Akrar',ha:19.8,ex:36,rep:261,adal:144,dRep:15.0,dAdal:12.2},
+  {n:'ÍB11 Sólvellir',ha:23.4,ex:16,rep:335,adal:334,dRep:15.0,dAdal:15.0},
+  {n:'ÍB327 Helgafell nyrst',ha:10.0,ex:0,rep:150,adal:90,dRep:15.0,dAdal:9.0}
+];
+const TEIG={n:'ÍB-316 Teigsland',ha:13.3,ex:0,rep:200,adal:200,dRep:15.0,dAdal:15.0};
+const SEGS=[
+  {n:'Nýi Kóngsvegur — meðfram Teigslandi',m:500},
+  {n:'Nýi Kóngsvegur — að Nýja Bjargsvegi',m:600},
+  {n:'Nýi Bjargsvegur — frá Nýja Kóngsvegi',m:550},
+  {n:'Nýi Bjargsvegur — meðfram Reykjalandi I',m:500,p1:true},
+  {n:'Nýi Bjargsvegur — að Helgafellslandi',m:900}
+];
+const NET_M=3050, FIN=0.104, IDX=0.035;
+
+/* ---------- interactive 30yr model ---------- */
+const selHelga=document.getElementById('selHelga'), selData=document.getElementById('selData'), selTeig=document.getElementById('selTeig');
+const S={
+  utsvar:document.getElementById('sUtsvar'), fsk:document.getElementById('sFsk'),
+  rek:document.getElementById('sRek'), km:document.getElementById('sKm'),
+  len:document.getElementById('sLen'), bru:document.getElementById('sBru'),
+  n:document.getElementById('sN'), p:document.getElementById('sP'),
+  ramp:document.getElementById('sRamp'), vextir:document.getElementById('sVextir')
+};
+const O={
+  utsvar:document.getElementById('oUtsvar'), fsk:document.getElementById('oFsk'),
+  rek:document.getElementById('oRek'), km:document.getElementById('oKm'),
+  len:document.getElementById('oLen'), bru:document.getElementById('oBru'),
+  n:document.getElementById('oN'), p:document.getElementById('oP'),
+  ramp:document.getElementById('oRamp'), vextir:document.getElementById('oVextir')
+};
+const PRESETS={
+  pVar:  {utsvar:139,fsk:23,rek:315},
+  pGrunn:{utsvar:237,fsk:35,rek:220},
+  pHag:  {utsvar:339,fsk:50,rek:150}
+};
+function setPreset(id){
+  const p=PRESETS[id];
+  S.utsvar.value=p.utsvar;S.fsk.value=p.fsk;S.rek.value=p.rek;
+  document.querySelectorAll('.presets button').forEach(b=>b.classList.toggle('on',b.id===id));
+  recalc();
+}
+Object.keys(PRESETS).forEach(id=>document.getElementById(id).addEventListener('click',e=>{e.preventDefault();setPreset(id);}));
+document.getElementById('btnReset').addEventListener('click',()=>{
+  S.km.value=904;S.len.value=500;S.bru.value=100;S.n.value=8;S.p.value=50;S.ramp.value=6;S.vextir.value=3.5;
+  selHelga.value='1370';selData.value='rep';selTeig.value='1';setPreset('pGrunn');
+});
+Object.values(S).forEach(s=>s.addEventListener('input',()=>{
+  if(['utsvar','fsk','rek'].some(k=>S[k]===s)) document.querySelectorAll('.presets button').forEach(b=>b.classList.remove('on'));
+  recalc();
+}));
+[selHelga,selData,selTeig].forEach(s=>s.addEventListener('change',recalc));
+
+const dsum=key=>AREAS.reduce((s,a)=>s+a[key],0);
+function split(key){
+  const H=+selHelga.value, T=(+selTeig.value)*TEIG[key];
+  const den=H+dsum(key)+T, mine=AREAS[0][key];
+  return {b:H/den, s:mine/den, t:T/den, o:1-(H+mine+T)/den, den};
+}
+function series(townCost){
+  const utsvar=+S.utsvar.value, fsk=+S.fsk.value, rek=+S.rek.value;
+  const T=+S.ramp.value, r=+S.vextir.value/100;
+  const pts=[];let cum=0;
+  for(let t=1;t<=30;t++){
+    const ramp=Math.min(t/T,1);
+    let cf=(utsvar+fsk-rek)*ramp;
+    if(t<=3)cf-=townCost/3;
+    cum+=cf/Math.pow(1+r,t);
+    pts.push(cum);
+  }
+  return {pts,annual:utsvar+fsk-rek};
+}
+const c1f=x=>(Math.round(x*10)/10).toString().replace('.',',');
+const pcf=x=>c1f(x*100)+'%';
+const sgn=(x,d)=>(x>0?'+':(x<0?'−':''))+c1f(Math.abs(x));
+function setT(id,t){const e=document.getElementById(id);if(e)e.textContent=t;}
+
+function drawSegTable(km,bru,N){
+  const host=document.getElementById('segTbl');if(!host)return;
+  let r='<table><tr><th>Kafli</th><th class="num">Lengd (m)</th><th class="num">Lág</th><th class="num">Mið (stillt)</th><th class="num">Há</th><th>Staða</th></tr>';
+  SEGS.forEach(s=>{
+    r+='<tr'+(s.p1?' class="hl"':'')+'><td>'+s.n+'</td><td class="num">'+fmt0(s.m)+'</td><td class="num">'+fmt0(420*s.m/1000)+'</td><td class="num">'+fmt0(km*s.m/1000)+'</td><td class="num">'+fmt0(1300*s.m/1000)+'</td><td>'+(s.p1?'<b>Áfangi 1 (~500 m, tenging yfir Varmá)</b>':'Síðar, kostað af þeim sem njóta')+'</td></tr>';
+  });
+  r+='<tr><td>Brú eða rör yfir Varmá (óstaðfest ágiskun)</td><td class="num"></td><td class="num"></td><td class="num">'+fmt0(bru)+'</td><td class="num"></td><td>Hluti af áfanga 1</td></tr>';
+  r+='<tr><td><b>Samtals netið</b></td><td class="num"><b>'+fmt0(NET_M)+'</b></td><td class="num"><b>'+fmt0(420*NET_M/1000+bru)+'</b></td><td class="num"><b>'+fmt0(N)+'</b></td><td class="num"><b>'+fmt0(1300*NET_M/1000+bru)+'</b></td><td>m.kr. (lág og há með sömu brú)</td></tr></table>';
+  host.innerHTML=r;
+}
+function drawAreaTable(N){
+  const host=document.getElementById('areaTbl');if(!host)return;
+  const H=+selHelga.value, tg=+selTeig.value;
+  const R=split('rep'), A=split('adal');
+  const cell=(n,sp)=>pcf(n/sp.den)+' · '+fmt0(N*n/sp.den)+' m.kr.';
+  let r='<table><tr><th>Svæði</th><th class="num">Ha fullbyggt</th><th class="num">Núv. íb.</th><th class="num">Nýjar íb.<br>skýrsla v1.1</th><th class="num">Íb./ha</th><th class="num">Nýjar íb.<br>aðalskipulag</th><th class="num">Hlutur í kerfinu</th></tr>';
+  AREAS.forEach(a=>{
+    r+='<tr'+(a.me?' class="hl"':'')+'><td>'+a.n+'</td><td class="num">'+c1f(a.ha)+'</td><td class="num">'+a.ex+'</td><td class="num">'+a.rep+'</td><td class="num">'+c1f(a.dRep)+'</td><td class="num">'+a.adal+'</td><td class="num">'+cell(a.rep,R)+'</td></tr>';
+  });
+  r+='<tr><td>'+TEIG.n+(tg?'':' (ekki með)')+'</td><td class="num">'+c1f(TEIG.ha)+'</td><td class="num">0</td><td class="num">'+TEIG.rep+'</td><td class="num">'+c1f(TEIG.dRep)+'</td><td class="num">'+TEIG.adal+'</td><td class="num">'+(tg?cell(TEIG.rep,R):'—')+'</td></tr>';
+  r+='<tr><td><b>Samtals þróunarsvæði</b></td><td class="num"></td><td class="num"></td><td class="num"><b>'+fmt0(dsum('rep')+tg*TEIG.rep)+'</b></td><td class="num"></td><td class="num"><b>'+fmt0(dsum('adal')+tg*TEIG.adal)+'</b></td><td class="num"><b>'+pcf(1-R.b)+' · '+fmt0(N*(1-R.b))+' m.kr.</b></td></tr>';
+  r+='<tr><td>Helgafell suðurhlíðar (ÍB-302) — hluti bæjar</td><td class="num">56</td><td class="num">906</td><td class="num">464</td><td class="num">24,5</td><td class="num">464</td><td class="num">'+(H?pcf(R.b)+' · '+fmt0(N*R.b)+' m.kr.':'ekki með')+'</td></tr></table>';
+  host.innerHTML=r;
+}
+
+function recalc(){
+  for(const k in O)O[k].value=(''+S[k].value).replace('.',',');
+  const km=+S.km.value, len=+S.len.value, bru=+S.bru.value, nn=+S.n.value, pp=+S.p.value/100;
+  const N=km*NET_M/1000+bru;               // heildarnet (m.kr.)
+  const c1=km*len/1000+bru;                // vegáfangi 1 (m.kr.)
+  const sh=split(selData.value);
+  const P=N*sh.s;                          // hlutur ÍB317 í öllu netinu
+  const sA=series(0), annual=sA.annual, pts=sA.pts, npv=pts[29];
+  const pb=pts.findIndex(v=>v>=0);
+  // leið B: aðrir eiga að greiða (1-s) af kaflanum
+  const R=(1-sh.s)*c1;
+  const npvB=series(R).pts[29];
+  // leið C: endurgreiðsla R að ári nn, verðbætt IDX, núvirt á FIN
+  const ratio=Math.pow((1+IDX)/(1+FIN),nn);
+  const recMax=R*ratio, recExp=pp*recMax;
+
+  const kA=document.getElementById('kArleg');
+  kA.textContent=(annual>0?'+':'')+fmt0(annual); kA.className='n '+(annual>=0?'good':'bad');
+  const kN=document.getElementById('kNPV');
+  kN.textContent=(npv>0?'+':'')+fmt1(npv/1000).replace('.',','); kN.className='n '+(npv>=0?'good':'bad');
+  document.getElementById('kPayback').textContent=pb>=0?('ár '+(pb+1)):'—';
+  document.getElementById('kC1').textContent=fmt0(c1);
+  document.getElementById('kP').textContent=fmt0(P);
+
+  const hv=+selHelga.value;
+  const hel=hv?('Helgafell sem hlutur bæjar: '+fmt0(hv)+' íbúðir'):'Helgafell ekki með';
+  document.getElementById('helgaNote').innerHTML='<b>Leið A:</b> ÍB317 kostar vegáfanga 1 ('+fmt0(len)+' m á '+fmt0(km)+' m.kr. á km'+(bru?' + brú/rör '+fmt0(bru)+' m.kr.':'')+') = <b>'+fmt0(c1)+' m.kr.</b> Bærinn leggur ekkert út fyrir vegum í áfanga 1. Til samanburðar er hlutdeild ÍB317 í öllu netinu (3.050 m, '+fmt0(N)+' m.kr.) '+pcf(sh.s)+' eða <b>'+fmt0(P)+' m.kr.</b> ('+hel+(+selTeig.value?', Teigsland með':', Teigsland ekki með')+'; '+(selData.value==='rep'?'skýrsla v1.1':'aðalskipulagsdrög')+').';
+
+  setT('stNet',(Math.round(N/100)/10).toString().replace('.',',')+' ma.kr.');
+  drawSegTable(km,bru,N);
+  drawAreaTable(N);
+  drawRoad([
+    {l:'Mosfellsbær '+pcf(sh.b),s:'Bær (Helgafell)',v:sh.b*100,c:'#5A6B7A'},
+    {l:'ÍB317 '+pcf(sh.s),s:'ÍB317',v:sh.s*100,c:'#C9A227'},
+    {l:'Teigsland '+pcf(sh.t),s:'Teigsland',v:sh.t*100,c:'#8A6E1A'},
+    {l:'Önnur svæði '+pcf(sh.o),s:'Önnur svæði',v:sh.o*100,c:'#274B6E'}
+  ]);
+
+  // leiðir A/B
+  const diff=c1-P; var near=Math.abs(diff)<=0.2*P;
+  const diffTxt=(diff>=0?fmt0(diff)+' m.kr. umfram':fmt0(-diff)+' m.kr. undir')+' hlut í öllu netinu';
+  let t='<table><tr><th>Leið</th><th>Hvernig</th><th class="num">ÍB317 greiðir nú</th><th class="num">ÍB317 til lengri tíma</th><th class="num">Bærinn (NPV 30 ár)</th><th>Mat</th></tr>';
+  t+='<tr class="hl"><td><b>A</b> — ÍB317 kostar áfanga 1</td><td>ÍB317 greiðir og byggir kaflann að fullu; lokauppgjör vegna kerfisvega áfanga 1.</td><td class="num">'+fmt0(c1)+' m.kr.</td><td class="num">'+fmt0(c1)+' m.kr.<br><span style="font-weight:400">('+diffTxt+')</span></td><td class="num">'+sgn(npv/1000)+' ma.kr.<br><span style="font-weight:400">bær leggur ekkert út</span></td><td><b>Valin leið.</b> Einföld og bærinn án áhættu; '+(near?'kostnaður nálægt réttum hlut.':(diff>0?'kostnaður umfram réttan hlut (verð fyrir vissu og lokauppgjör).':'kostnaður undir réttum hlut.'))+'</td></tr>';
+  t+='<tr><td><b>B</b> — ÍB317 leggur út, endurkrafa</td><td>ÍB317 greiðir allan kaflann og fær '+fmt0(R)+' m.kr. verðbættar endurgreiddar frá síðari svæðum eftir '+nn+' ár ('+Math.round(pp*100)+'% líkur).</td><td class="num">'+fmt0(c1)+' m.kr.</td><td class="num">'+fmt0(c1-recExp)+' m.kr.<br><span style="font-weight:400">(best: '+fmt0(c1-recMax)+')</span></td><td class="num">'+sgn(npv/1000)+' ma.kr.</td><td>Betri á pappír en háð því að svæði án skipulags tengist og greiði; krefst kvaða á aðra landeigendur.</td></tr></table>';
+  document.getElementById('leidirTbl').innerHTML=t;
+  document.getElementById('leidirNote').innerHTML='Forsendur leiðar B: verðbætur '+c1f(IDX*100)+'% á ári, núvirt á '+c1f(FIN*100)+'% fjármögnunarkostnaði ÍB317 (vaxtaviðmið stjórnar). Hlutfallsleg skipting miðast við fjölda nýrra íbúða ('+(selData.value==='rep'?'skýrsla v1.1':'aðalskipulagsdrög')+'), Helgafell sem hlut bæjar og Teigsland '+(+selTeig.value?'með':'ekki með')+'. Allar tölur eru stilltar í reiknilíkaninu að ofan. Brú/rör er óstaðfest ágiskun.';
+  near=Math.abs(diff)<=0.2*P;
+  setT('rA2','Leið A kostar '+fmt0(c1)+' m.kr.; hlutdeild ÍB317 í öllu netinu (3.050 m, skipt eftir íbúðum) er '+fmt0(P)+' m.kr. '+(near?'Munurinn er lítill ('+diffTxt+'): ÍB317 greiðir í raun sinn hlut fyrirfram.':(diff>0?'ÍB317 greiðir '+fmt0(diff)+' m.kr. umfram hlutinn. Það er verðið fyrir lokauppgjör, einfaldleika og að bærinn og aðrir landeigendur þurfi ekkert að leggja til nú.':'ÍB317 greiðir '+fmt0(-diff)+' m.kr. undir hlutnum, svo leið A er ódýrari en hlutfallsleg skipting.')));
+  setT('rA4',sgn(npv/1000));
+  setT('rA5',fmt0(recMax)); setT('rA6',''+nn); setT('rA7',fmt0(recExp)); setT('rA8',''+Math.round(pp*100));
+  drawCurve(pts);
+}
+function drawCurve(pts){
+  const host=document.getElementById('npvCurve');host.innerHTML='';
+  const W=620,H=300,pad={l:56,r:14,t:16,b:30};
+  const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'Uppsafnað núvirt sjóðstreymi'});
+  const lo=Math.min(0,...pts)*1.15/1000, hi=Math.max(0,...pts)*1.15/1000;
+  const span=(hi-lo)||1;
+  const x=t=>pad.l+(t-1)/29*(W-pad.l-pad.r);
+  const y=v=>pad.t+(hi-v/1000)/span*(H-pad.t-pad.b);
+  // grid
+  const steps=5;
+  for(let i=0;i<=steps;i++){
+    const v=lo+(hi-lo)*i/steps;
+    el('line',{x1:pad.l,x2:W-pad.r,y1:y(v*1000),y2:y(v*1000),stroke:'#33547A','stroke-width':1},svg);
+    el('text',{x:pad.l-8,y:y(v*1000)+4,'text-anchor':'end','font-size':11,fill:'#8FA5B8'},svg).textContent=fmt1(v).replace('.',',');
+  }
+  el('line',{x1:pad.l,x2:W-pad.r,y1:y(0),y2:y(0),stroke:'#EAF1F8','stroke-width':1.5},svg);
+  [1,5,10,15,20,25,30].forEach(t=>{
+    el('text',{x:x(t),y:H-8,'text-anchor':'middle','font-size':11,fill:'#8FA5B8'},svg).textContent=t;
+  });
+  el('text',{x:pad.l-8,y:12,'text-anchor':'end','font-size':10.5,fill:'#8FA5B8'},svg).textContent='ma.kr.';
+  // area + line
+  let dA=`M ${x(1)} ${y(0)}`;pts.forEach((v,i)=>dA+=` L ${x(i+1)} ${y(v)}`);dA+=` L ${x(30)} ${y(0)} Z`;
+  el('path',{d:dA,fill:'#C9A227',opacity:0.14},svg);
+  let dL='';pts.forEach((v,i)=>dL+=(i?' L ':'M ')+x(i+1)+' '+y(v));
+  el('path',{d:dL,fill:'none',stroke:'#C9A227','stroke-width':2.5,'stroke-linejoin':'round'},svg);
+  // breakeven marker
+  const pb=pts.findIndex(v=>v>=0);
+  if(pb>0){
+    el('circle',{cx:x(pb+1),cy:y(pts[pb]),r:5,fill:'#C9A227',stroke:'#12263A','stroke-width':2},svg);
+    el('text',{x:x(pb+1),y:y(pts[pb])-12,'text-anchor':'middle','font-size':11.5,'font-weight':700,fill:'#EAF1F8'},svg).textContent='ár '+(pb+1);
+  }
+  // hover
+  const dot=el('circle',{r:4.5,fill:'#EAF1F8',stroke:'#C9A227','stroke-width':2,visibility:'hidden'},svg);
+  const tip=el('text',{'font-size':12,'font-weight':700,fill:'#EAF1F8',visibility:'hidden'},svg);
+  const hit=el('rect',{x:pad.l,y:pad.t,width:W-pad.l-pad.r,height:H-pad.t-pad.b,fill:'transparent'},svg);
+  hit.addEventListener('mousemove',ev=>{
+    const box=svg.getBoundingClientRect();
+    const mx=(ev.clientX-box.left)/box.width*W;
+    let t=Math.round((mx-pad.l)/(W-pad.l-pad.r)*29)+1;
+    t=Math.max(1,Math.min(30,t));
+    const v=pts[t-1];
+    dot.setAttribute('cx',x(t));dot.setAttribute('cy',y(v));dot.setAttribute('visibility','visible');
+    tip.textContent='ár '+t+': '+(v>0?'+':'')+fmt1(v/1000).replace('.',',')+' ma.kr.';
+    const tx=Math.min(Math.max(x(t),pad.l+70),W-pad.r-80);
+    tip.setAttribute('x',tx);tip.setAttribute('y',y(v)-14);tip.setAttribute('text-anchor','middle');
+    tip.setAttribute('visibility','visible');
+  });
+  hit.addEventListener('mouseleave',()=>{dot.setAttribute('visibility','hidden');tip.setAttribute('visibility','hidden');});
+  host.appendChild(svg);
+}
+recalc();
+
+/* ---------- lock ---------- */
+document.getElementById('lockBtn').addEventListener('click',e=>{
+  e.preventDefault();
+  try{localStorage.removeItem('rl_pass');}catch(_){}
+  location.reload();
+});
+</script>
+</body>
+</html>
